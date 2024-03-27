@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        .tb1 {
+            width: 400px;
+            border: 3px solid green;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid yellowgreen;
+            text-align: center
+        }
+
+        thead {
+            background-color: aquamarine;
+        }
+
+        thead :hover {
+            color: yellow;
+            font-style: italic;
+        }
+
+        tbody {
+            background-color: #CEFFCE;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: #84C1FF;
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color: #2894FF;
+        }
+
+        tbody :hover {
+            color: blanchedalmond;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tb1">
+        <caption>
+            <h4>表格練習</h4>
+        </caption>
+        <thead>
+            <tr>
+                <th>第1個</th>
+                <th>第2個</th>
+                <th>第3個</th>
+                <th>第4個</th>
+            </tr>
+            <tr>
+                <td colspan="3">1</td>
+                <!-- <td>2</td> -->
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="3">2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!-- <td>2</td> -->
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!-- <td>2</td> -->
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td rowspan="3">4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <!-- <td>4</td> -->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <!-- <td>4</td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
